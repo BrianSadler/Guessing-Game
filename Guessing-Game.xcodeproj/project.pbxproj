@@ -7,6 +7,10 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		20765300215C9E0F00A24EC8 /* Guess.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 207652FF215C9E0F00A24EC8 /* Guess.mp3 */; };
+		20765302215C9FEE00A24EC8 /* DanceBackground.gif in Resources */ = {isa = PBXBuildFile; fileRef = 20765301215C9FEE00A24EC8 /* DanceBackground.gif */; };
+		20765304215CA34100A24EC8 /* GIF.swift in Sources */ = {isa = PBXBuildFile; fileRef = 20765303215CA34100A24EC8 /* GIF.swift */; };
+		20765308215CC06900A24EC8 /* Noice.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 20765307215CC06900A24EC8 /* Noice.mp3 */; };
 		20ACEFB4215BCA800031E5EA /* GameSetupView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 20ACEFB3215BCA800031E5EA /* GameSetupView.swift */; };
 		20B59CA7215548C1006E3A71 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 20B59CA6215548C1006E3A71 /* AppDelegate.swift */; };
 		20B59CA9215548C1006E3A71 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 20B59CA8215548C1006E3A71 /* ViewController.swift */; };
@@ -16,6 +20,10 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		207652FF215C9E0F00A24EC8 /* Guess.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = Guess.mp3; sourceTree = "<group>"; };
+		20765301215C9FEE00A24EC8 /* DanceBackground.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; path = DanceBackground.gif; sourceTree = "<group>"; };
+		20765303215CA34100A24EC8 /* GIF.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GIF.swift; sourceTree = "<group>"; };
+		20765307215CC06900A24EC8 /* Noice.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = Noice.mp3; sourceTree = "<group>"; };
 		20ACEFB3215BCA800031E5EA /* GameSetupView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameSetupView.swift; sourceTree = "<group>"; };
 		20B59CA3215548C1006E3A71 /* Guessing-Game.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Guessing-Game.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		20B59CA6215548C1006E3A71 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -60,9 +68,13 @@
 				20B59CA8215548C1006E3A71 /* ViewController.swift */,
 				20B59CAA215548C1006E3A71 /* Main.storyboard */,
 				20B59CAD215548C4006E3A71 /* Assets.xcassets */,
+				20765307215CC06900A24EC8 /* Noice.mp3 */,
+				207652FF215C9E0F00A24EC8 /* Guess.mp3 */,
+				20765301215C9FEE00A24EC8 /* DanceBackground.gif */,
 				20B59CAF215548C4006E3A71 /* LaunchScreen.storyboard */,
 				20B59CB2215548C4006E3A71 /* Info.plist */,
 				20ACEFB3215BCA800031E5EA /* GameSetupView.swift */,
+				20765303215CA34100A24EC8 /* GIF.swift */,
 			);
 			path = "Guessing-Game";
 			sourceTree = "<group>";
@@ -126,7 +138,10 @@
 			buildActionMask = 2147483647;
 			files = (
 				20B59CB1215548C4006E3A71 /* LaunchScreen.storyboard in Resources */,
+				20765308215CC06900A24EC8 /* Noice.mp3 in Resources */,
 				20B59CAE215548C4006E3A71 /* Assets.xcassets in Resources */,
+				20765300215C9E0F00A24EC8 /* Guess.mp3 in Resources */,
+				20765302215C9FEE00A24EC8 /* DanceBackground.gif in Resources */,
 				20B59CAC215548C1006E3A71 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -140,6 +155,7 @@
 			files = (
 				20B59CA9215548C1006E3A71 /* ViewController.swift in Sources */,
 				20ACEFB4215BCA800031E5EA /* GameSetupView.swift in Sources */,
+				20765304215CA34100A24EC8 /* GIF.swift in Sources */,
 				20B59CA7215548C1006E3A71 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

@@ -7,6 +7,7 @@
 //
 
 import UIKit
+import AVFoundation
 
 class ViewController: UIViewController {
     var colorArray:[UIColor] = [UIColor.yellow, UIColor.green, UIColor.orange, UIColor.purple, UIColor.blue, UIColor.magenta, UIColor.red]
@@ -111,6 +112,7 @@ class ViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view, typically from a nib.
+        AttemptsLeft.text = "Remaining Attempts: \(numOfAttempts)"
      attemptWarning()
         gameState()
          let tap: UITapGestureRecognizer = UITapGestureRecognizer(target: self, action: #selector(self.dismissKeyboard))
