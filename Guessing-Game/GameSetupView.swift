@@ -88,17 +88,17 @@ class GameSetupView: UIViewController {
             
             guard UBNum != nil else { return viewController.randomNumber = Int(arc4random_uniform(100)) + 1 }
             
-            viewController.randomNumber = Int.random(in: 0..<UBNum!)
+            viewController.randomNumber = Int.random(in: 0..<Int(UpDown.value))
             
-            if UBNum == 0 {
+            if UpDown.value == 0 {
                 
                 viewController.randomNumber = Int(arc4random_uniform(100)) + 1
                 
             }
             
             viewController.numOfAttempts = numOfAttempts
-            if let UBNum = Int(MaxNum.text!) {
-                randomNumber = Int.random(in: 0..<UBNum)
+            if Int(MaxNum.text!) != nil {
+                randomNumber = Int.random(in: 0..<Int(UpDown.value))
                 viewController.randomNumber = randomNumber
             } else {
                 randomNumber = Int(arc4random_uniform(100)) + 1

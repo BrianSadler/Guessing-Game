@@ -70,6 +70,9 @@ class ViewController: UIViewController {
             reset.isHidden = false
         }
         else if guess > randomNumber {
+            GuessStatus.text = "Input a number in the range"
+        }
+        else if guess > randomNumber {
             GuessStatus.text = "Try a lower number"
             numOfAttempts -= 1
               AttemptsLeft.text = "Remaining Attempts: \(numOfAttempts)"
