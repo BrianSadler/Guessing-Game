@@ -33,6 +33,7 @@ class GameSetupView: UIViewController {
             }
         }
     }
+
     
     @objc func discoBackground() {
         let randomColor = colorArray[Int(arc4random_uniform(UInt32(colorArray.count)))]
@@ -57,16 +58,17 @@ class GameSetupView: UIViewController {
         switch  GuessChoiceOutlet.selectedSegmentIndex {
         case 0:
             numOfAttempts = 5
-            Rules.text = "There are \(numOfAttempts) attempts to guess a random # 1-100"
+             Rules.text = "There are \(numOfAttempts) attempts to guess a random # 1-100)"
+            
         case 1:
             numOfAttempts = 25
-              Rules.text = "There are \(numOfAttempts) attempts to guess a random # 1-100"
+                Rules.text = "There are \(numOfAttempts) attempts to guess a random # 1-100)"
         case 2:
             numOfAttempts = 50
-              Rules.text = "There are \(numOfAttempts) attempts to guess a random # 1-\(Int(UpDown.value))"
+              Rules.text = "There are \(numOfAttempts) attempts to guess a random # 1-100)"
         case 3:
             numOfAttempts = 100
-              Rules.text = "There are \(numOfAttempts) attempts to guess a random # 1-\(Int(UpDown.value))"
+              Rules.text = "There are \(numOfAttempts) attempts to guess a random # 1-100)"
             default:
             numOfAttempts = 5
               Rules.text = "There are \(numOfAttempts) attempts to guess a random # 1-\(Int(UpDown.value))"
@@ -78,12 +80,13 @@ class GameSetupView: UIViewController {
        
     }
     
+    
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
         var UBNum = Int(MaxNum.text!)
-        
         if let viewController = segue.destination as? ViewController {
             
             UBNum = Int(MaxNum.text!)
+            viewController.maxNum = Int(UpDown.value)
             
             
             guard UBNum != nil else { return viewController.randomNumber = Int(arc4random_uniform(100)) + 1 }

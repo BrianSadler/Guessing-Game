@@ -12,6 +12,7 @@ import AVFoundation
 class ViewController: UIViewController {
     var colorArray:[UIColor] = [UIColor.yellow, UIColor.green, UIColor.orange, UIColor.purple, UIColor.blue, UIColor.magenta, UIColor.red]
     var userChoice = 0
+    var maxNum = 0
     var numOfAttempts = 5
     var numOfWins = 0
     var numOfLoses = 0
@@ -69,7 +70,7 @@ class ViewController: UIViewController {
           Timer.scheduledTimer(timeInterval: 1, target: self, selector: #selector(winnerBackground), userInfo: nil, repeats: true)
             reset.isHidden = false
         }
-        else if guess > randomNumber {
+        else if guess > maxNum {
             GuessStatus.text = "Input a number in the range"
         }
         else if guess > randomNumber {
